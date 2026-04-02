@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///home/araki/Documentos/my-portifolio/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,mIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
-    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///home/araki/Documentos/my-portifolio/app/page.tsx"],"sourcesContent":["import About from \"@/components/models/about\";\nimport Profile from \"@/components/models/profile\";\nimport Skills from \"@/components/models/skills\";\nimport Projetos from \"@/components/models/projetos\";\n\nexport default function Home() {\n  return (\n    <main>\n      <About />\n      <Profile />\n      <Skills />\n      <Projetos />\n    </main>\n  );\n}\n"],"names":["Home","About","Profile","Skills","Projetos"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAKe,SAASA;IACtB,qBACE,8OAAC;;0BACC,8OAACC;;;;;0BACD,8OAACC;;;;;0BACD,8OAACC;;;;;0BACD,8OAACC;;;;;;;;;;;AAGP"}}]
-}
