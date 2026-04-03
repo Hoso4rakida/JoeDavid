@@ -1,6 +1,6 @@
-import Window from "@/componets/layout/window";
+import Window from "@/components/layout/window";
 import { IoCodeSlashSharp } from "react-icons/io5";
-import Bubble from "@/componets/layout/bubble";
+import Bubble from "@/components/layout/bubble";
 
 const skillsData = {
   languages: ["TypeScript", "Python", "SQL", "Lua", "JavaScript"],

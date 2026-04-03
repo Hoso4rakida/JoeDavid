@@ -1,4 +1,4 @@
-import Window from "@/componets/layout/window";
+import Window from "@/components/layout/window";
 
 function Profile() {
   return (

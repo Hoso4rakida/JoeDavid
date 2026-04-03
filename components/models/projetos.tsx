@@ -1,5 +1,5 @@
-import Window from "@/componets/layout/window";
-import Projeto from "@/componets/layout/projeto";
+import Window from "@/components/layout/window";
+import Projeto from "@/components/layout/projeto";
 
 import { BsWindowSplit } from "react-icons/bs";
 
@@ -23,7 +23,7 @@ const projeto2 = {
 
 function Projetos() {
   return (
-    <Window title="~/workspace/projetos">
+    <Window title="~/workspace/projects">
       <div className="p-2">
         <div className="flex items-center gap-2 mb-8">
           <BsWindowSplit size={20} className="text-secondary" />

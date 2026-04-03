@@ -1,6 +1,6 @@
-import Window from "@/componets/layout/window";
+import Window from "@/components/layout/window";
 import { LuTerminal } from "react-icons/lu";
-import Bubble from "@/componets/layout/bubble";
+import Bubble from "@/components/layout/bubble";
 
 function About() {
   return (

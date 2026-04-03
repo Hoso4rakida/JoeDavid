@@ -1,7 +1,7 @@
 import { TbBrandGithub } from "react-icons/tb";
 import { LuExternalLink } from "react-icons/lu";
-import Box from "@/componets/layout/box";
-import Bubble from "@/componets/layout/bubble";
+import Box from "@/components/layout/box";
+import Bubble from "@/components/layout/bubble";
 
 interface ProjetoProps {
   nome: string;
