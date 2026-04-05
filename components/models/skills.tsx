@@ -2,6 +2,10 @@ import Window from "@/components/layout/window";
 import { IoCodeSlashSharp } from "react-icons/io5";
 import Bubble from "@/components/layout/bubble";
 
+interface SkillsProps {
+  style?: string;
+}
+
 const skillsData = {
   languages: ["TypeScript", "Python", "SQL", "Lua", "JavaScript"],
   frameworks: ["React", "Next.js", "Tailwind CSS", "FastAPI"],
@@ -41,9 +45,9 @@ function RenderSkillsList({
   );
 }
 
-function Skills() {
+function Skills({ style }: SkillsProps) {
   return (
-    <Window title="skills.json">
+    <Window title="skills.json" style={style}>
       <div className="p-2">
         <div className="flex items-center gap-2 mb-8">
           <IoCodeSlashSharp size={20} className="text-primary" />

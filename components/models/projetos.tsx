@@ -21,9 +21,14 @@ const projeto2 = {
   link: "https://joe-david.vercel.app/",
 };
 
-function Projetos() {
+interface ProjetosProps {
+  style?: string;
+  id: string;
+}
+
+function Projetos({ style, id }: ProjetosProps) {
   return (
-    <Window title="~/workspace/projects">
+    <Window title="~/workspace/projects" style={style} id={id}>
       <div className="p-2">
         <div className="flex items-center gap-2 mb-8">
           <BsWindowSplit size={20} className="text-secondary" />

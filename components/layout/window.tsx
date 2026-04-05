@@ -8,6 +8,8 @@ interface HeaderBarProps {
 
 interface WindowProps {
   children: React.ReactNode;
+  style?: string;
+  id?: string;
 }
 
 function HeaderBar({ title }: HeaderBarProps) {
@@ -43,9 +45,9 @@ function HeaderBar({ title }: HeaderBarProps) {
   );
 }
 
-function Window({ children, title }: WindowProps & HeaderBarProps) {
+function Window({ children, title, style, id }: WindowProps & HeaderBarProps) {
   return (
-    <div className="glass-panel hypr-window m-5 rounded-2xl overflow-hidden border border-[#11111b]/20">
+    <div className={`glass-panel hypr-window m-5 rounded-2xl overflow-hidden border border-[#11111b]/20 ${style || ''}`} id={id}>
       <HeaderBar title={title} />
       <div className="p-6 text-[#cdd6f4]">{children}</div>
     </div>

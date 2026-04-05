@@ -4,9 +4,14 @@ import { TbBrandGithub } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
 import Bubble from "@/components/layout/bubble";
 
-function Social() {
+interface SocialProps {
+  style?: string;
+  id?: string;
+}
+
+function Social({ style, id }: SocialProps) {
   return (
-    <Window title="contact.sh">
+    <Window title="contact.sh" style={style} id={id}>
       <div className="flex items-center pb-5">
         <LuCoffee size={24} className="text-destructive" />
         <h4 className="text-xl font-bold pl-3">Minhas Redes Sociais</h4>

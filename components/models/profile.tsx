@@ -1,8 +1,13 @@
 import Window from "@/components/layout/window";
+import Image from 'next/image'
 
-function Profile() {
+interface ProfileProps {
+  style?: string;
+}
+
+function Profile({ style }: ProfileProps) {
   return (
-    <Window title="neofetch">
+    <Window title="neofetch" style={style}>
       <div className="flex flex-col items-center">
         <div className="w-full text-center mb-4">
           <div className="relative overflow-hidden w-48 h-48 rounded-2xl mb-4 border-8 border-foreground/15 block mx-auto transform-content rotate-358 hover:rotate-360 transition-transform duration-300">
@@ -17,7 +22,7 @@ function Profile() {
                     `}</style>
 
             <img
-              src="https://i.pinimg.com/736x/81/07/6d/81076ddc4cb6737d4163b7a301906fe6.jpg"
+              src="/profile.jpg"
               alt="Profile Image"
               className="w-full h-full rounded-lg object-cover"
             />
